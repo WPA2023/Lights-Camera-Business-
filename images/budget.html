@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: -apple-system, sans-serif; background: #1a1a2e; color: #fff; padding: 20px; margin: 0; }
+    .header { background: #16213e; padding: 15px 20px; border-bottom: 2px solid #e94560; }
+    .header h1 { margin: 0; color: #e94560; font-size: 18px; }
+    .toolbar { background: #0f3460; padding: 10px 20px; display: flex; gap: 10px; }
+    .btn { background: #e94560; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; }
+    .total-bar { background: #16213e; margin: 20px; padding: 20px; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+    .total-label { font-size: 14px; color: #888; }
+    .total-amount { font-size: 32px; font-weight: bold; color: #e94560; }
+    .categories { padding: 0 20px; }
+    .category { background: #16213e; margin-bottom: 10px; border-radius: 8px; overflow: hidden; }
+    .cat-header { background: #0f3460; padding: 12px 20px; display: flex; justify-content: space-between; cursor: pointer; }
+    .cat-name { font-weight: bold; }
+    .cat-total { color: #e94560; }
+    .cat-items { padding: 10px 20px; }
+    .item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #2a2a4a; font-size: 14px; }
+    .item:last-child { border-bottom: none; }
+    .item-cost { color: #4ade80; }
+  </style>
+</head>
+<body>
+  <div class="header"><h1>💰 Budget Tracker</h1></div>
+  <div class="toolbar">
+    <button class="btn">+ Add Expense</button>
+    <button class="btn" style="background:#0f3460">Export</button>
+  </div>
+  <div class="total-bar">
+    <span class="total-label">TOTAL BUDGET</span>
+    <span class="total-amount">$12,450</span>
+  </div>
+  <div class="categories">
+    <div class="category">
+      <div class="cat-header"><span class="cat-name">🎬 Equipment</span><span class="cat-total">$4,200</span></div>
+      <div class="cat-items">
+        <div class="item"><span>Camera rental (RED Komodo)</span><span class="item-cost">$1,800</span></div>
+        <div class="item"><span>Lens kit rental</span><span class="item-cost">$950</span></div>
+        <div class="item"><span>Lighting package</span><span class="item-cost">$1,450</span></div>
+      </div>
+    </div>
+    <div class="category">
+      <div class="cat-header"><span class="cat-name">👥 Crew</span><span class="cat-total">$3,500</span></div>
+      <div class="cat-items">
+        <div class="item"><span>DP + Operator</span><span class="item-cost">$1,200</span></div>
+        <div class="item"><span>Gaffer + Grips</span><span class="item-cost">$1,100</span></div>
+        <div class="item"><span>Sound mixer</span><span class="item-cost">$1,200</span></div>
+      </div>
+    </div>
+    <div class="category">
+      <div class="cat-header"><span class="cat-name">📍 Locations</span><span class="cat-total">$2,250</span></div>
+      <div class="cat-items">
+        <div class="item"><span>Studio rental (3 days)</span><span class="item-cost">$1,500</span></div>
+        <div class="item"><span>Location permits</span><span class="item-cost">$750</span></div>
+      </div>
+    </div>
+    <div class="category">
+      <div class="cat-header"><span class="cat-name">🍕 Production</span><span class="cat-total">$2,500</span></div>
+      <div class="cat-items">
+        <div class="item"><span>Catering (3 days)</span><span class="item-cost">$1,800</span></div>
+        <div class="item"><span>Transportation</span><span class="item-cost">$700</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

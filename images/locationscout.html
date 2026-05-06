@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: -apple-system, sans-serif; background: #1a1a2e; color: #fff; padding: 20px; margin: 0; }
+    .header { background: #16213e; padding: 15px 20px; border-bottom: 2px solid #e94560; }
+    .header h1 { margin: 0; color: #e94560; font-size: 18px; }
+    .toolbar { background: #0f3460; padding: 10px 20px; display: flex; gap: 10px; }
+    .btn { background: #e94560; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; padding: 20px; }
+    .location { background: #16213e; border-radius: 8px; overflow: hidden; }
+    .loc-img { background: linear-gradient(135deg, #2a4a3a 0%, #1a2a2e 100%); height: 100px; display: flex; align-items: center; justify-content: center; font-size: 30px; }
+    .loc-content { padding: 15px; }
+    .loc-name { font-weight: bold; margin-bottom: 5px; }
+    .loc-address { color: #888; font-size: 12px; margin-bottom: 10px; }
+    .loc-tags { display: flex; gap: 5px; flex-wrap: wrap; }
+    .tag { background: #0f3460; padding: 3px 8px; border-radius: 4px; font-size: 11px; }
+    .loc-contact { margin-top: 10px; padding-top: 10px; border-top: 1px solid #2a2a4a; font-size: 12px; color: #888; }
+  </style>
+</head>
+<body>
+  <div class="header"><h1>📍 Location Scout</h1></div>
+  <div class="toolbar">
+    <button class="btn">+ Add Location</button>
+    <button class="btn" style="background:#0f3460">Map View</button>
+  </div>
+  <div class="grid">
+    <div class="location">
+      <div class="loc-img">🏠</div>
+      <div class="loc-content">
+        <div class="loc-name">Downtown Loft</div>
+        <div class="loc-address">123 Main St, Floor 4, NYC</div>
+        <div class="loc-tags">
+          <span class="tag">Interior</span>
+          <span class="tag">Modern</span>
+          <span class="tag">Natural Light</span>
+        </div>
+        <div class="loc-contact">📞 John: 555-0101</div>
+      </div>
+    </div>
+    <div class="location">
+      <div class="loc-img">🌳</div>
+      <div class="loc-content">
+        <div class="loc-name">Riverside Park</div>
+        <div class="loc-address">Park Ave & 5th, Queens</div>
+        <div class="loc-tags">
+          <span class="tag">Exterior</span>
+          <span class="tag">Nature</span>
+          <span class="tag">Permit Req</span>
+        </div>
+        <div class="loc-contact">📞 Parks Dept</div>
+      </div>
+    </div>
+    <div class="location">
+      <div class="loc-img">🏭</div>
+      <div class="loc-content">
+        <div class="loc-name">Old Warehouse</div>
+        <div class="loc-address">88 Industrial Blvd, Brooklyn</div>
+        <div class="loc-tags">
+          <span class="tag">Interior</span>
+          <span class="tag">Industrial</span>
+          <span class="tag">Large Space</span>
+        </div>
+        <div class="loc-contact">📞 Mike: 555-0202</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

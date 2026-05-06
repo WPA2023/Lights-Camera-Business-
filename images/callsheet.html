@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: -apple-system, sans-serif; background: #fff; color: #1a1a2e; padding: 20px; margin: 0; max-width: 800px; margin: 0 auto; }
+    .header { text-align: center; padding-bottom: 20px; border-bottom: 2px solid #1a1a2e; }
+    .header h1 { margin: 0; font-size: 24px; text-transform: uppercase; letter-spacing: 2px; }
+    .meta { display: flex; justify-content: center; gap: 40px; margin-top: 15px; font-size: 14px; color: #666; }
+    .section { margin: 25px 0; }
+    .section-title { background: #1a1a2e; color: #fff; padding: 8px 15px; font-size: 14px; font-weight: bold; text-transform: uppercase; margin-bottom: 15px; }
+    .cast-list, .crew-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .person { display: flex; justify-content: space-between; padding: 8px 12px; background: #f5f5f5; border-radius: 4px; }
+    .person-name { font-weight: bold; }
+    .person-role { font-size: 13px; color: #666; }
+    .person-time { color: #e94560; font-weight: bold; }
+    .schedule { background: #f5f5f5; padding: 15px; border-radius: 4px; }
+    .schedule-item { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #ddd; }
+    .schedule-item:last-child { border-bottom: none; }
+    .location-box { background: #f5f5f5; padding: 15px; border-radius: 4px; }
+    .location-name { font-weight: bold; font-size: 16px; }
+    .location-address { color: #666; margin-top: 5px; }
+    .weather { margin-top: 10px; font-size: 14px; }
+    .meal { background: #fff3cd; padding: 10px 15px; border-radius: 4px; border-left: 4px solid #ffc107; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Call Sheet</h1>
+    <div class="meta">
+      <span>📅 May 15, 2026</span>
+      <span>🎬 Day 1 of 3</span>
+      <span>🎥 "The Last Chance"</span>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-title">Cast</div>
+    <div class="cast-list">
+      <div class="person"><span class="person-name">John Miller</span><span class="person-role">Lead</span><span class="person-time">6:00 AM</span></div>
+      <div class="person"><span class="person-name">Sarah Chen</span><span class="person-role">Lead</span><span class="person-time">8:00 AM</span></div>
+      <div class="person"><span class="person-name">Mike Torres</span><span class="person-role">Supporting</span><span class="person-time">9:00 AM</span></div>
+      <div class="person"><span class="person-name">Lisa Park</span><span class="person-role">Supporting</span><span class="person-time">10:00 AM</span></div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-title">Crew Call Times</div>
+    <div class="crew-list">
+      <div class="person"><span class="person-name">Director</span><span class="person-role">Alex W.</span><span class="person-time">5:30 AM</span></div>
+      <div class="person"><span class="person-name">DP</span><span class="person-role">Maria S.</span><span class="person-time">5:30 AM</span></div>
+      <div class="person"><span class="person-name">Gaffer</span><span class="person-role">Tom K.</span><span class="person-time">6:00 AM</span></div>
+      <div class="person"><span class="person-name">Sound</span><span class="person-role">James L.</span><span class="person-time">6:30 AM</span></div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-title">Schedule</div>
+    <div class="schedule">
+      <div class="schedule-item"><span>6:00 AM</span><span>Call time / Coffee</span></div>
+      <div class="schedule-item"><span>7:00 AM</span><span>Blocking - Scene 1</span></div>
+      <div class="schedule-item"><span>9:00 AM</span><span>Shot 1-15: Scene 1</span></div>
+      <div class="schedule-item"><span>12:00 PM</span><span>LUNCH BREAK</span></div>
+      <div class="schedule-item"><span>1:00 PM</span><span>Shot 16-28: Scene 3</span></div>
+      <div class="schedule-item"><span>5:00 PM</span><span>Wrap</span></div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="section-title">Location</div>
+    <div class="location-box">
+      <div class="location-name">Downtown Loft Studio</div>
+      <div class="location-address">123 Main St, Floor 4, New York, NY 10001</div>
+      <div class="weather">☀️ 72°F - Partly Cloudy</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <div class="meal">🍕 Lunch: 12:00 PM - Italian catering, dietary options available</div>
+  </div>
+</body>
+</html>

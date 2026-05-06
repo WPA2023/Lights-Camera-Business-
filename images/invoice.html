@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: -apple-system, sans-serif; background: #fff; color: #1a1a2e; padding: 40px; margin: 0; max-width: 800px; margin: 0 auto; }
+    .invoice-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 40px; }
+    .invoice-title { font-size: 36px; font-weight: bold; color: #e94560; }
+    .invoice-num { font-size: 14px; color: #666; }
+    .from-box, .to-box { margin-bottom: 30px; }
+    .label { font-size: 12px; color: #888; text-transform: uppercase; margin-bottom: 5px; }
+    .from-box div, .to-box div { font-size: 14px; }
+    .invoice-meta { text-align: right; }
+    .invoice-meta div { margin-bottom: 5px; }
+    .invoice-number { font-size: 24px; font-weight: bold; }
+    .items-table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+    .items-table th { background: #1a1a2e; color: #fff; padding: 12px; text-align: left; font-size: 12px; text-transform: uppercase; }
+    .items-table td { padding: 12px; border-bottom: 1px solid #eee; }
+    .items-table tr:last-child td { border-bottom: none; }
+    .qty-col { text-align: center; }
+    .price-col { text-align: right; }
+    .totals { margin-left: auto; width: 250px; }
+    .total-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee; }
+    .total-row.final { border-bottom: none; font-size: 20px; font-weight: bold; color: #e94560; border-top: 2px solid #1a1a2e; margin-top: 10px; padding-top: 15px; }
+    .status { background: #4ade80; color: #000; padding: 8px 16px; border-radius: 4px; font-weight: bold; font-size: 14px; display: inline-block; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="invoice-header">
+    <div>
+      <div class="invoice-title">INVOICE</div>
+      <div class="invoice-num">Lights, Camera, Business</div>
+    </div>
+    <div class="invoice-meta">
+      <div class="invoice-number">#INV-2026-0042</div>
+      <div>Date: May 6, 2026</div>
+      <div>Due: June 6, 2026</div>
+    </div>
+  </div>
+  
+  <div style="display: flex; justify-content: space-between;">
+    <div class="from-box">
+      <div class="label">From</div>
+      <div><strong>Lights, Camera, Business</strong></div>
+      <div>your@email.com</div>
+    </div>
+    <div class="to-box">
+      <div class="label">Bill To</div>
+      <div><strong>Blue Ridge Productions</strong></div>
+      <div>Accounts Payable</div>
+      <div>456 Media Ave</div>
+      <div>Los Angeles, CA 90028</div>
+    </div>
+  </div>
+  
+  <table class="items-table">
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th class="qty-col">Qty</th>
+        <th class="price-col">Rate</th>
+        <th class="price-col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <strong>Camera Crew - Day Rate</strong><br>
+          <span style="color:#666;font-size:13px;">DP, Gaffer, 2 Grips, Sound Mixer - May 3, 2026</span>
+        </td>
+        <td class="qty-col">1</td>
+        <td class="price-col">$1,800.00</td>
+        <td class="price-col">$1,800.00</td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Equipment Rental</strong><br>
+          <span style="color:#666;font-size:13px;">RED Komodo, Lens Kit, Lighting Package</span>
+        </td>
+        <td class="qty-col">1</td>
+        <td class="price-col">$950.00</td>
+        <td class="price-col">$950.00</td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Post-Production Editing</strong><br>
+          <span style="color:#666;font-size:13px;">6 hours editing, color grading</span>
+        </td>
+        <td class="qty-col">1</td>
+        <td class="price-col">$600.00</td>
+        <td class="price-col">$600.00</td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Location Scout & Permits</strong><br>
+          <span style="color:#666;font-size:13px;">Research, booking, permit fees</span>
+        </td>
+        <td class="qty-col">1</td>
+        <td class="price-col">$350.00</td>
+        <td class="price-col">$350.00</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <div class="totals">
+    <div class="total-row"><span>Subtotal</span><span>$3,700.00</span></div>
+    <div class="total-row"><span>Tax (0%)</span><span>$0.00</span></div>
+    <div class="total-row final"><span>TOTAL</span><span>$3,700.00</span></div>
+  </div>
+  
+  <div class="status">PAID</div>
+</body>
+</html>

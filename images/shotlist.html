@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { font-family: -apple-system, sans-serif; background: #1a1a2e; color: #fff; padding: 20px; margin: 0; }
+    .header { background: #16213e; padding: 15px 20px; border-bottom: 2px solid #e94560; }
+    .header h1 { margin: 0; color: #e94560; font-size: 18px; }
+    .toolbar { background: #0f3460; padding: 10px 20px; display: flex; gap: 10px; }
+    .btn { background: #e94560; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; padding: 20px; }
+    .shot { background: #16213e; border-radius: 8px; overflow: hidden; }
+    .shot-num { background: #e94560; padding: 5px 10px; font-weight: bold; font-size: 14px; }
+    .shot-content { padding: 15px; }
+    .shot-title { font-weight: bold; margin-bottom: 8px; }
+    .shot-detail { color: #888; font-size: 12px; margin: 3px 0; }
+    .shot-desc { margin-top: 10px; color: #ccc; font-size: 13px; }
+    .frame { background: #0f3460; height: 80px; display: flex; align-items: center; justify-content: center; color: #555; }
+  </style>
+</head>
+<body>
+  <div class="header"><h1>🎬 Shot List</h1></div>
+  <div class="toolbar">
+    <button class="btn">+ Add Shot</button>
+    <button class="btn" style="background:#0f3460">Export</button>
+  </div>
+  <div class="grid">
+    <div class="shot">
+      <div class="shot-num">1</div>
+      <div class="frame">📷</div>
+      <div class="shot-content">
+        <div class="shot-title">Wide establishing shot</div>
+        <div class="shot-detail">📐 Wide • 24mm • ⏱ 5s</div>
+        <div class="shot-desc">Aerial view of the city at sunrise</div>
+      </div>
+    </div>
+    <div class="shot">
+      <div class="shot-num">2</div>
+      <div class="frame">📷</div>
+      <div class="shot-content">
+        <div class="shot-title">Medium two-shot</div>
+        <div class="shot-detail">📐 Medium • 50mm • ⏱ 8s</div>
+        <div class="shot-desc">John and Sarah walking in the park</div>
+      </div>
+    </div>
+    <div class="shot">
+      <div class="shot-num">3</div>
+      <div class="frame">📷</div>
+      <div class="shot-content">
+        <div class="shot-title">Close-up reaction</div>
+        <div class="shot-detail">📐 Close • 85mm • ⏱ 3s</div>
+        <div class="shot-desc">Sarah's emotional realization moment</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

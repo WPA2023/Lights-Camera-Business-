@@ -10,6 +10,40 @@ A SaaS web app for freelance filmmakers with tiered tool subscriptions.
 | Indie | $12/mo (25% off) | + Budget Tracker, Location Scout |
 | Pro | $25/mo (45% off) | + Equipment Checkout, Call Sheet, Invoice |
 
+---
+
+## Tools
+
+### Shot List (Starter - Free)
+![Shot List Preview](images/shotlist.png)
+Plan every shot for your shoot. Add shot number, description, camera angle, lens, and duration.
+
+### Storyboard (Starter - Free)
+![Storyboard Preview](images/storyboard.png)
+Draw or describe each scene visually. Frame-by-frame planning with notes for camera movement.
+
+### Budget Tracker (Indie)
+![Budget Tracker Preview](images/budget.png)
+Track all your production expenses in one place. Categories for gear, crew, locations, catering, and more.
+
+### Location Scout (Indie)
+![Location Scout Preview](images/locationscout.png)
+Find and save potential filming locations. Store photos, addresses, contact info, and notes.
+
+### Equipment Checkout (Pro)
+![Equipment Checkout Preview](images/equipment.png)
+Keep track of who has what gear. Log rentals, returns, and condition reports.
+
+### Call Sheet (Pro)
+![Call Sheet Preview](images/callsheet.png)
+Generate professional daily shoot schedules. Cast, crew, call times, locations, and meal breaks.
+
+### Invoice (Pro)
+![Invoice Preview](images/invoice.png)
+Create and send invoices to clients. Itemized billing with payment tracking.
+
+---
+
 ## Setup
 
 ### 1. Supabase (Database & Auth)

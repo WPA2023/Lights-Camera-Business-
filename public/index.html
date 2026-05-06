@@ -8,48 +8,51 @@
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
     body { background: #0a0a0a; color: #fff; min-height: 100vh; }
     
-    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; }
-    .logo { font-size: 1.5rem; font-weight: 700; color: #e94560; }
+    header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 1rem; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; flex-wrap: wrap; gap: 0.5rem; }
+    .logo { font-size: 1.2rem; font-weight: 700; color: #e94560; }
     .logo span { color: #fff; }
     
-    nav a { color: #888; text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem; transition: color 0.2s; }
+    nav { display: flex; gap: 1rem; }
+    nav a { color: #888; text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
     nav a:hover, nav a.active { color: #e94560; }
     
-    main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    main { max-width: 1200px; margin: 0 auto; padding: 1.5rem; }
     
-    .hero { text-align: center; padding: 4rem 0; }
-    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero { text-align: center; padding: 2rem 0; }
+    .hero h1 { font-size: 2rem; margin-bottom: 1rem; line-height: 1.2; }
     .hero h1 span { color: #e94560; }
-    .hero p { color: #888; font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; }
+    .hero p { color: #888; font-size: 1rem; max-width: 100%; margin: 0 auto 1.5rem; }
     
-    .btn { background: #e94560; color: #fff; border: none; padding: 0.8rem 1.5rem; border-radius: 6px; font-size: 1rem; cursor: pointer; transition: all 0.2s; }
+    .btn { background: #e94560; color: #fff; border: none; padding: 0.9rem 1.5rem; border-radius: 6px; font-size: 1rem; cursor: pointer; transition: all 0.2s; min-height: 44px; }
     .btn:hover { background: #ff6b6b; transform: translateY(-2px); }
     .btn-outline { background: transparent; border: 2px solid #e94560; }
     .btn-outline:hover { background: #e94560; }
     
-    .pricing { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; }
-    .pricing-card { background: #1a1a2e; border-radius: 12px; padding: 2rem; text-align: center; border: 2px solid #333; transition: all 0.3s; }
+    .pricing { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin: 2rem 0; }
+    .pricing-card { background: #1a1a2e; border-radius: 12px; padding: 1.5rem; text-align: center; border: 2px solid #333; transition: all 0.3s; }
     .pricing-card:hover { border-color: #e94560; transform: translateY(-5px); }
     .pricing-card.featured { border-color: #e94560; position: relative; }
     .pricing-card.featured::before { content: 'POPULAR'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #e94560; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
-    .pricing-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
-    .pricing-card .price { font-size: 2.5rem; font-weight: 700; color: #e94560; }
+    .pricing-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .pricing-card .price { font-size: 2rem; font-weight: 700; color: #e94560; }
     .pricing-card .price span { font-size: 1rem; color: #888; }
     .pricing-card .discount { background: #1e3a2f; color: #4ade80; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; display: inline-block; margin: 0.5rem 0; }
-    .pricing-card ul { list-style: none; margin: 1.5rem 0; text-align: left; }
+    .pricing-card ul { list-style: none; margin: 1rem 0; text-align: left; }
     .pricing-card li { padding: 0.5rem 0; color: #aaa; }
     .pricing-card li::before { content: '✓'; color: #4ade80; margin-right: 0.5rem; }
     
-    .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
-    .tool-card { background: #1a1a2e; border-radius: 12px; padding: 1.5rem; border: 1px solid #333; cursor: pointer; transition: all 0.2s; }
+    .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .tool-card { background: #1a1a2e; border-radius: 12px; padding: 1.25rem; border: 1px solid #333; cursor: pointer; transition: all 0.2s; }
     .tool-card:hover { border-color: #e94560; }
-    .tool-card h3 { margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    .tool-card h3 { margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; }
     .tool-card .icon { font-size: 1.5rem; }
     .tool-card p { color: #888; font-size: 0.9rem; }
     .tool-card .tier-tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; margin-top: 0.5rem; }
     .tier-tag.free { background: #1e3a2f; color: #4ade80; }
     .tier-tag.indie { background: #3a2e1e; color: #fbbf24; }
     .tier-tag.pro { background: #3a1e2e; color: #e94560; }
+    
+    .tool-card .tool-preview { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; margin-bottom: 0.75rem; background: #0a0a0a; }
     
     .auth-form { max-width: 400px; margin: 2rem auto; background: #1a1a2e; padding: 2rem; border-radius: 12px; }
     .auth-form h2 { margin-bottom: 1.5rem; text-align: center; }
@@ -88,6 +91,43 @@
     
     .back-btn { background: transparent; border: none; color: #888; cursor: pointer; margin-right: 1rem; }
     .back-btn:hover { color: #e94560; }
+
+    /* Tablet and up */
+    @media (min-width: 768px) {
+      header { padding: 1rem 2rem; }
+      .logo { font-size: 1.5rem; }
+      nav { gap: 0; }
+      nav a { margin-left: 1.5rem; font-size: 0.9rem; }
+      main { padding: 2rem; }
+      .hero { padding: 4rem 0; }
+      .hero h1 { font-size: 3rem; }
+      .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; }
+      .pricing { grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; }
+      .pricing-card { padding: 2rem; }
+      .pricing-card h3 { font-size: 1.5rem; }
+      .pricing-card .price { font-size: 2.5rem; }
+      .pricing-card ul { margin: 1.5rem 0; }
+      .tools-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+      .tool-card { padding: 1.5rem; }
+      .tool-card .tool-preview { height: 160px; }
+      .auth-form { padding: 2rem; }
+      .dashboard-header { flex-direction: row; }
+      .project-item { flex-direction: row; }
+    }
+
+    /* Small phones */
+    @media (max-width: 480px) {
+      .hero h1 { font-size: 1.75rem; }
+      .btn { width: 100%; margin-bottom: 0.5rem; }
+      .pricing-card .price { font-size: 1.75rem; }
+      .dashboard-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .dashboard-header > div:last-child { width: 100%; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+      .project-item { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+      .project-item .actions { width: 100%; display: flex; gap: 0.5rem; }
+      .project-item .actions button { flex: 1; }
+      .shotlist-table { font-size: 0.85rem; }
+      .shotlist-table th, .shotlist-table td { padding: 0.5rem; }
+    }
   </style>
 </head>
 <body>
@@ -112,38 +152,51 @@
       <h2 style="text-align:center;margin-bottom:2rem">Tools Included</h2>
       <div class="tools-grid">
         <div class="tool-card">
+          <img class="tool-preview" src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=400&h=300&fit=crop" alt="Shot List Example">
           <h3><span class="icon">🎬</span> Shot List</h3>
           <p>Plan every shot. Frame by frame.</p>
           <span class="tier-tag free">Free</span>
         </div>
         <div class="tool-card">
+          <img class="tool-preview" src="https://images.unsplash.com/photo-1574717432404-2d11a50a5787?w=400&h=300&fit=crop" alt="Storyboard Example">
           <h3><span class="icon">🎨</span> Storyboard</h3>
           <p>Sketch and storyboard your scenes.</p>
           <span class="tier-tag free">Free</span>
         </div>
         <div class="tool-card">
+          <img class="tool-preview" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Budget Tracker Example">
           <h3><span class="icon">💰</span> Budget Tracker</h3>
           <p>Keep your production on budget.</p>
           <span class="tier-tag indie">Indie</span>
         </div>
         <div class="tool-card">
+          <img class="tool-preview" src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=300&fit=crop" alt="Location Scout Example">
           <h3><span class="icon">📍</span> Location Scout</h3>
           <p>Save and share locations.</p>
           <span class="tier-tag indie">Indie</span>
         </div>
         <div class="tool-card">
+          <img class="tool-preview" src="https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?w=400&h=300&fit=crop" alt="Equipment Checkout Example">
           <h3><span class="icon">🎥</span> Equipment Checkout</h3>
           <p>Track gear in and out.</p>
           <span class="tier-tag pro">Pro</span>
         </div>
         <div class="tool-card">
+          <img class="tool-preview" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop" alt="Call Sheet Example">
           <h3><span class="icon">📋</span> Call Sheet</h3>
           <p>Generate professional call sheets.</p>
           <span class="tier-tag pro">Pro</span>
         </div>
         <div class="tool-card">
+          <img class="tool-preview" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=300&fit=crop" alt="Invoice Builder Example">
           <h3><span class="icon">📄</span> Invoice Builder</h3>
           <p>Create and send invoices.</p>
+          <span class="tier-tag pro">Pro</span>
+        </div>
+        <div class="tool-card">
+          <img class="tool-preview" src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop" alt="Talent Release Example">
+          <h3><span class="icon">📝</span> Talent Release</h3>
+          <p>Get signed releases from talent.</p>
           <span class="tier-tag pro">Pro</span>
         </div>
       </div>
@@ -186,6 +239,7 @@
           <li>Equipment Checkout</li>
           <li>Call Sheet</li>
           <li>Invoice Builder</li>
+          <li>Talent Release</li>
         </ul>
         <button class="btn btn-outline" onclick="upgrade('pro')">Upgrade</button>
       </div>
@@ -234,6 +288,12 @@
     </div>
     <button class="btn" onclick="openModal()" style="margin-bottom:1rem">+ New Project</button>
     <div class="project-list" id="project-list"></div>
+    
+    <div style="margin-top:3rem;border-top:1px solid #333;padding-top:2rem">
+      <h3 style="margin-bottom:1rem">📝 Talent Releases <span style="color:#888;font-weight:normal;font-size:0.9rem">(Pro)</span></h3>
+      <button class="btn" onclick="openTalentReleaseModal()" style="margin-bottom:1rem">+ New Talent Release</button>
+      <div class="project-list" id="talent-release-list"></div>
+    </div>
   </main>
 
   <div class="modal" id="project-modal">
@@ -248,9 +308,22 @@
         <option value="equipment">Equipment Checkout</option>
         <option value="callsheet">Call Sheet</option>
         <option value="invoice">Invoice Builder</option>
+        <option value="talentrelease">Talent Release</option>
       </select>
       <button class="btn" onclick="createProject()">Create</button>
       <button class="btn btn-outline" onclick="closeModal()" style="margin-left:0.5rem">Cancel</button>
+    </div>
+  </div>
+
+  <div class="modal" id="talent-release-modal">
+    <div class="modal-content">
+      <h2>New Talent Release</h2>
+      <input type="text" id="talent-name" placeholder="Talent Name" style="width:100%;padding:0.8rem;margin-bottom:1rem;background:#0a0a0a;border:1px solid #333;border-radius:6px;color:#fff;font-size:1rem">
+      <input type="text" id="talent-project" placeholder="Project Title" style="width:100%;padding:0.8rem;margin-bottom:1rem;background:#0a0a0a;border:1px solid #333;border-radius:6px;color:#fff;font-size:1rem">
+      <textarea id="talent-description" placeholder="Description / Notes" style="width:100%;padding:0.8rem;margin-bottom:1rem;background:#0a0a0a;border:1px solid #333;border-radius:6px;color:#fff;font-size:1rem;min-height:80px"></textarea>
+      <input type="text" id="talent-usage" placeholder="Usage Rights (e.g., All media, Social media only)" style="width:100%;padding:0.8rem;margin-bottom:1rem;background:#0a0a0a;border:1px solid #333;border-radius:6px;color:#fff;font-size:1rem">
+      <button class="btn" onclick="createTalentRelease()">Create</button>
+      <button class="btn btn-outline" onclick="closeTalentReleaseModal()" style="margin-left:0.5rem">Cancel</button>
     </div>
   </div>
 
@@ -285,6 +358,7 @@
     let currentProject = null;
     let editingProjectId = null;
     let userTier = 'starter';
+    let talentReleases = [];
 
     const TOOL_INFO = {
       shotlist: { name: 'Shot List', icon: '🎬', tier: 'starter' },
@@ -293,7 +367,8 @@
       locationscout: { name: 'Location Scout', icon: '📍', tier: 'indie' },
       equipment: { name: 'Equipment Checkout', icon: '🎥', tier: 'pro' },
       callsheet: { name: 'Call Sheet', icon: '📋', tier: 'pro' },
-      invoice: { name: 'Invoice Builder', icon: '📄', tier: 'pro' }
+      invoice: { name: 'Invoice Builder', icon: '📄', tier: 'pro' },
+      talentrelease: { name: 'Talent Release', icon: '📝', tier: 'pro' }
     };
 
     // Check for Stripe upgrade redirect
@@ -417,12 +492,105 @@
       document.getElementById('dashboard-page').style.display = 'block';
       document.getElementById('user-tier').textContent = userTier.charAt(0).toUpperCase() + userTier.slice(1);
       loadProjects();
+      loadTalentReleases();
     }
 
     async function loadProjects() {
       const data = await api('/api/projects');
       projects = data.projects.map(p => ({ ...p, data: typeof p.data === 'string' ? JSON.parse(p.data || '{}') : (p.data || {}) }));
       renderProjects();
+    }
+
+    async function loadTalentReleases() {
+      if (userTier !== 'pro') {
+        document.getElementById('talent-release-list').innerHTML = '<p style="color:#888">Upgrade to Pro to access Talent Releases</p>';
+        return;
+      }
+      const data = await api('/api/talent-releases');
+      talentReleases = data.releases || [];
+      renderTalentReleases();
+    }
+
+    function renderTalentReleases() {
+      const list = document.getElementById('talent-release-list');
+      if (talentReleases.length === 0) {
+        list.innerHTML = '<p style="color:#888;text-align:center;padding:1rem">No talent releases yet.</p>';
+        return;
+      }
+      
+      list.innerHTML = talentReleases.map(r => `
+        <div class="project-item">
+          <div class="info">
+            <h4>${r.talent_name}</h4>
+            <span>${r.project_title || 'No project'} • ${r.signed ? '✅ Signed' : '⏳ Pending'}</span>
+          </div>
+          <div class="actions">
+            ${!r.signed ? `<button onclick="signTalentRelease(${r.id})">Sign</button>` : ''}
+            <button onclick="deleteTalentRelease(${r.id})">Delete</button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function openTalentReleaseModal() {
+      if (userTier !== 'pro') {
+        alert('Upgrade to Pro to access Talent Releases');
+        return;
+      }
+      document.getElementById('talent-release-modal').classList.add('active');
+      document.getElementById('talent-name').value = '';
+      document.getElementById('talent-project').value = '';
+      document.getElementById('talent-description').value = '';
+      document.getElementById('talent-usage').value = '';
+    }
+
+    function closeTalentReleaseModal() {
+      document.getElementById('talent-release-modal').classList.remove('active');
+    }
+
+    async function createTalentRelease() {
+      const talentName = document.getElementById('talent-name').value;
+      const projectTitle = document.getElementById('talent-project').value;
+      const description = document.getElementById('talent-description').value;
+      const usageRights = document.getElementById('talent-usage').value;
+      
+      if (!talentName) {
+        alert('Please enter talent name');
+        return;
+      }
+      
+      try {
+        await api('/api/talent-releases', {
+          method: 'POST',
+          body: JSON.stringify({ talentName, projectTitle, description, usageRights })
+        });
+        closeTalentReleaseModal();
+        loadTalentReleases();
+      } catch (e) {
+        alert(e.message);
+      }
+    }
+
+    async function signTalentRelease(id) {
+      const signature = prompt('Enter signature (full name):');
+      if (!signature) return;
+      const email = prompt('Talent email (optional):');
+      
+      try {
+        await api('/api/talent-releases/' + id + '/sign', {
+          method: 'PUT',
+          body: JSON.stringify({ signature, talentEmail: email || '' })
+        });
+        loadTalentReleases();
+      } catch (e) {
+        alert(e.message);
+      }
+    }
+
+    async function deleteTalentRelease(id) {
+      if (!confirm('Delete this talent release?')) return;
+      await api('/api/talent-releases/' + id, { method: 'DELETE' });
+      loadTalentReleases();
     }
 
     function renderProjects() {
